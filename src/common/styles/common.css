@@ -1,3 +1,4 @@
+@import "/node_modules/normalize.css/normalize.css";
 @font-face {
   font-family: "DelaGothic";
   src: url("/src/common/fonts/DelaGothicOne-Regular.ttf") format("ttf");
@@ -71,11 +72,16 @@ h4 {
 }
 
 .link16 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .link14 {
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 73.75rem;
 }/*# sourceMappingURL=common.css.map */
