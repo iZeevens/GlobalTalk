@@ -1,0 +1,237 @@
+@import "/node_modules/normalize.css/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kameron:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+.head {
+  background: var(--primaty-grey-light, #F6F5F4);
+  box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
+}
+
+.head .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  text-decoration: none;
+}
+.nav .logo {
+  font-family: "DelaGothic", sans-serif;
+  font-size: 1.30381rem;
+  line-height: 100%;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.02606rem;
+  color: black;
+}
+.nav .nav-item {
+  color: #757575;
+  text-decoration: none;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+.sign .profileName {
+  color: var(--primaty-grey-dark, #757575);
+}
+
+.header-items {
+  padding: 1.5rem 0;
+}
+
+.first-screen {
+  background-color: #F6F5F4;
+}
+.first-screen .container {
+  display: flex;
+  gap: 5.625rem;
+  padding-top: 5.91rem;
+  padding-bottom: 8.41rem;
+}
+
+.first-screen-informaion-texts .first-screen-informaion-platform {
+  color: var(--primaty-cyan-dark, #2B788B);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+}
+.first-screen-informaion-texts .first-screen-informaion-practice {
+  color: var(--primaty-grey-dark, #757575);
+}
+
+.first-screen-informaion-container-btn {
+  margin-bottom: 3.05rem;
+}
+.first-screen-informaion-container-btn .first-screen-informaion-btn {
+  color: #2B788B;
+  display: flex;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1875rem;
+  border-radius: 6.25rem;
+  background: var(--primaty-cyan-light, #C3DCE3);
+  border: none;
+  cursor: pointer;
+}
+
+.first-screen-informaion-about-us {
+  display: flex;
+  align-items: center;
+  gap: 3.04856rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1875rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-number {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #000;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.05rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-number .first-screen-informaion-about-plus {
+  color: #2B788B;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.05rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-discript {
+  color: #585858;
+}
+
+.first-screen-img {
+  position: relative;
+}
+.first-screen-img .first-screen-img-boy {
+  position: relative;
+  margin-left: 3.24rem;
+  margin-left: 0.9rem;
+}
+.first-screen-img .first-screen-img-toy {
+  position: absolute;
+  filter: blur(7px);
+  top: 30%;
+}
+.first-screen-img .first-screen-img-cactus {
+  position: absolute;
+  filter: blur(10.5px);
+}
+
+h1 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.14rem;
+}
+
+h2 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.12rem;
+}
+
+h3 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.08rem;
+}
+
+h4 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.065rem;
+}
+
+.body1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: 600;
+  letter-spacing: -0.045rem;
+}
+
+.body2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
+  letter-spacing: -0.04rem;
+}
+
+.body3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: 600;
+  letter-spacing: -0.035rem;
+}
+
+.label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+}
+
+.link1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.link2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.button1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  letter-spacing: -0.045rem;
+  font-weight: 700;
+}
+
+.button2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 73.75rem;
+}/*# sourceMappingURL=main.css.map */

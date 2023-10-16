@@ -1,4 +1,4 @@
-@import "../../../common/styles/common.scss";
+// Navbar | Header
 
 .head {
     background: var(--primaty-grey-light, #F6F5F4);
@@ -22,7 +22,7 @@
         font-family: 'DelaGothic', sans-serif;
         font-size: 1.30381rem;
         line-height: 100%;
-        font-weight: 400;
+        font-weight: 800;
         text-decoration: none;
         letter-spacing: -0.02606rem;
         color: black
@@ -38,6 +38,10 @@
     display: flex;
     align-items: center;
     gap: 1.875rem;
+
+    .profileName {
+        color: var(--primaty-grey-dark, #757575);
+    }
 }
 
 .header-items {
