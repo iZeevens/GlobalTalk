@@ -1,140 +1,17 @@
 @import "/node_modules/normalize.css/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kameron:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-.head {
-  background: var(--primaty-grey-light, #F6F5F4);
-  box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
+@import '../../../../node_modules/animate.css/animate.css';
+* {
+  box-sizing: border-box;
 }
 
-.head .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1.875rem;
-  text-decoration: none;
-}
-.nav .logo {
-  font-family: "DelaGothic", sans-serif;
-  font-size: 1.30381rem;
-  line-height: 100%;
-  font-weight: 800;
-  text-decoration: none;
-  letter-spacing: -0.02606rem;
-  color: black;
-}
-.nav .nav-item {
-  color: #757575;
-  text-decoration: none;
-}
-
-.sign {
-  display: flex;
-  align-items: center;
-  gap: 1.875rem;
-}
-.sign .profileName {
-  color: var(--primaty-grey-dark, #757575);
-}
-
-.header-items {
-  padding: 1.5rem 0;
-}
-
-.first-screen {
-  background-color: #F6F5F4;
-}
-.first-screen .container {
-  display: flex;
-  gap: 5.625rem;
-  padding-top: 5.91rem;
-  padding-bottom: 8.41rem;
-}
-
-.first-screen-informaion-texts .first-screen-informaion-platform {
-  color: var(--primaty-cyan-dark, #2B788B);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: 0.14rem;
-  text-transform: uppercase;
-}
-.first-screen-informaion-texts .first-screen-informaion-practice {
-  color: var(--primaty-grey-dark, #757575);
-}
-
-.first-screen-informaion-container-btn {
-  margin-bottom: 3.05rem;
-}
-.first-screen-informaion-container-btn .first-screen-informaion-btn {
-  color: #2B788B;
-  display: flex;
-  padding: 0.875rem 1.375rem;
-  justify-content: center;
-  align-items: center;
-  gap: 1.1875rem;
-  border-radius: 6.25rem;
-  background: var(--primaty-cyan-light, #C3DCE3);
-  border: none;
-  cursor: pointer;
-}
-
-.first-screen-informaion-about-us {
-  display: flex;
-  align-items: center;
-  gap: 3.04856rem;
-}
-.first-screen-informaion-about-us .first-screen-informaion-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.1875rem;
-}
-.first-screen-informaion-about-us .first-screen-informaion-about-number {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  color: #000;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: -0.05rem;
-}
-.first-screen-informaion-about-us .first-screen-informaion-about-number .first-screen-informaion-about-plus {
-  color: #2B788B;
-  font-family: "Dela Gothic One", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: -0.05rem;
-}
-.first-screen-informaion-about-us .first-screen-informaion-about-discript {
-  color: #585858;
-}
-
-.first-screen-img {
-  position: relative;
-}
-.first-screen-img .first-screen-img-boy {
-  position: relative;
-  margin-left: 3.24rem;
-  margin-left: 0.9rem;
-}
-.first-screen-img .first-screen-img-toy {
-  position: absolute;
-  filter: blur(7px);
-  top: 30%;
-}
-.first-screen-img .first-screen-img-cactus {
-  position: absolute;
-  filter: blur(10.5px);
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
 h1 {
@@ -234,4 +111,214 @@ h4 {
 .container {
   margin: 0 auto;
   max-width: 73.75rem;
+}
+
+.head {
+  background: var(--primaty-grey-light, #F6F5F4);
+  box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
+}
+
+.head .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  text-decoration: none;
+}
+.nav .logo {
+  font-family: "DelaGothic", sans-serif;
+  font-size: 1.30381rem;
+  line-height: 100%;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.02606rem;
+  color: black;
+}
+.nav .nav-item {
+  color: #757575;
+  text-decoration: none;
+}
+.nav .nav-item:hover {
+  color: var(--primaty-black, #000);
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+.sign .profileName {
+  color: var(--primaty-grey-dark, #757575);
+}
+
+.header-items {
+  padding: 1.5rem 0;
+}
+
+.first-screen {
+  background-color: #F6F5F4;
+  overflow: hidden;
+}
+.first-screen .container {
+  display: flex;
+  padding-top: 5.91rem;
+  padding-bottom: 8.41rem;
+}
+
+.first-screen-informaion-texts .first-screen-informaion-platform {
+  color: var(--primaty-cyan-dark, #2B788B);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+}
+.first-screen-informaion-texts .first-screen-informaion-practice {
+  color: var(--primaty-grey-dark, #757575);
+}
+
+.first-screen-informaion-container-btn {
+  margin-bottom: 3.05rem;
+}
+.first-screen-informaion-container-btn .first-screen-informaion-btn {
+  color: #2B788B;
+  display: flex;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1875rem;
+  border-radius: 6.25rem;
+  background: var(--primaty-cyan-light, #C3DCE3);
+  border: none;
+  cursor: pointer;
+}
+
+.first-screen-informaion-about-us {
+  display: flex;
+  align-items: center;
+  gap: 3.04856rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1875rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about .first-screen-informaion-about-container {
+  display: flex;
+  align-items: baseline;
+  gap: 0.625rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-number {
+  color: #000;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.05rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-number .first-screen-informaion-about-plus {
+  color: #2B788B;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.05rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-discript {
+  color: #585858;
+}
+
+.first-screen-img {
+  position: relative;
+}
+.first-screen-img .first-screen-img-boy {
+  position: relative;
+  margin-left: 3.24rem;
+  margin-left: 0.9rem;
+}
+.first-screen-img .first-screen-img-toy {
+  position: absolute;
+  filter: blur(7px);
+  top: 30%;
+}
+.first-screen-img .first-screen-img-cactus {
+  position: absolute;
+  filter: blur(10.5px);
+  left: 54%;
+}
+
+.mini-game-about-screen {
+  background-color: #FFF;
+}
+.mini-game-about-screen .container {
+  display: flex;
+  padding: 4.84rem 0;
+}
+
+.mini-game-about-screen-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.97rem;
+  justify-content: center;
+  margin-left: 7.5rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-paragraf {
+  color: var(--primaty-grey-dark, #757575);
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games {
+  display: flex;
+  gap: 1.32rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-sprint {
+  border-radius: 0.875rem;
+  background: var(--primaty-pink-light, #F2D4DC);
+  display: flex;
+  width: 8.0625rem;
+  height: 7rem;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.1875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-sprint .mini-game-about-screen-game-sprint-text {
+  color: var(--primaty-pink-dark, #945069);
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-audio-call {
+  border-radius: 0.875rem;
+  background: var(--primaty-cyan-light, #C3DCE3);
+  display: flex;
+  width: 10.75rem;
+  height: 7rem;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.1875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-audio-call .mini-game-about-screen-game-audio-call-text {
+  color: var(--primaty-cyan-dark, #2B788B);
+}
+
+.mini-game-about-screen-game {
+  position: relative;
+}
+.mini-game-about-screen-game .mini-game-about-screen-game-img {
+  bottom: 35%;
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */

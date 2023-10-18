@@ -31,6 +31,13 @@
     .nav-item {
         color: #757575;
         text-decoration: none;
+
+        &:hover {
+            color: var(--primaty-black, #000);
+            animation: pulse; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 1s; /* don't forget to set a duration! */
+
+        }
     }
 }
 

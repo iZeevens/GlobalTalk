@@ -29,6 +29,11 @@
   color: #757575;
   text-decoration: none;
 }
+.nav .nav-item:hover {
+  color: var(--primaty-black, #000);
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
 
 .sign {
   display: flex;
@@ -41,4 +46,4 @@
 
 .header-items {
   padding: 1.5rem 0;
-}/*# sourceMappingURL=NavBar.css.map */
+}/*# sourceMappingURL=navbar.css.map */

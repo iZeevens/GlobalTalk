@@ -1,0 +1,65 @@
+.mini-game-about-screen {
+  background-color: #FFF;
+}
+.mini-game-about-screen .container {
+  display: flex;
+  padding: 4.84rem 0;
+}
+
+.mini-game-about-screen-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.97rem;
+  justify-content: center;
+  margin-left: 7.5rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-paragraf {
+  color: var(--primaty-grey-dark, #757575);
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games {
+  display: flex;
+  gap: 1.32rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-sprint {
+  border-radius: 0.875rem;
+  background: var(--primaty-pink-light, #F2D4DC);
+  display: flex;
+  width: 8.0625rem;
+  height: 7rem;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.1875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-sprint .mini-game-about-screen-game-sprint-text {
+  color: var(--primaty-pink-dark, #945069);
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-audio-call {
+  border-radius: 0.875rem;
+  background: var(--primaty-cyan-light, #C3DCE3);
+  display: flex;
+  width: 10.75rem;
+  height: 7rem;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.1875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-games .mini-game-about-screen-game-audio-call .mini-game-about-screen-game-audio-call-text {
+  color: var(--primaty-cyan-dark, #2B788B);
+}
+
+.mini-game-about-screen-game {
+  position: relative;
+}
+.mini-game-about-screen-game .mini-game-about-screen-game-img {
+  bottom: 35%;
+  position: absolute;
+}/*# sourceMappingURL=minigameaboutscreen.css.map */

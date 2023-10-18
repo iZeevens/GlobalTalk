@@ -1,5 +1,6 @@
 .first-screen {
   background-color: #F6F5F4;
+  overflow: hidden;
 }
 .first-screen .container {
   display: flex;
@@ -47,10 +48,12 @@
   align-items: center;
   gap: 0.1875rem;
 }
-.first-screen-informaion-about-us .first-screen-informaion-about-number {
+.first-screen-informaion-about-us .first-screen-informaion-about .first-screen-informaion-about-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.625rem;
+}
+.first-screen-informaion-about-us .first-screen-informaion-about-number {
   color: #000;
   font-family: "Dela Gothic One", sans-serif;
   font-size: 2.5rem;
@@ -86,4 +89,5 @@
 .first-screen-img .first-screen-img-cactus {
   position: absolute;
   filter: blur(10.5px);
+  left: 54%;
 }/*# sourceMappingURL=firstscreen.css.map */
