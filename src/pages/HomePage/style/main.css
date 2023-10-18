@@ -14,6 +14,10 @@ p {
   margin: 0;
 }
 
+button {
+  border: none;
+}
+
 h1 {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 3.5rem;
@@ -113,6 +117,23 @@ h4 {
   max-width: 73.75rem;
 }
 
+.buttonLight {
+  border-radius: 6.25rem;
+  background: var(--primaty-cyan-light, #C3DCE3);
+  color: #2B788B;
+  display: flex;
+  padding: 0.875rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1875rem;
+}
+.buttonLight:hover {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: white;
+  background-color: #2B788B;
+}
+
 .head {
   background: var(--primaty-grey-light, #F6F5F4);
   box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
@@ -187,22 +208,13 @@ h4 {
 }
 
 .first-screen-informaion-container-btn {
+  margin-top: 2rem;
   margin-bottom: 3.05rem;
-}
-.first-screen-informaion-container-btn .first-screen-informaion-btn {
-  color: #2B788B;
-  display: flex;
-  padding: 0.875rem 1.375rem;
-  justify-content: center;
-  align-items: center;
-  gap: 1.1875rem;
-  border-radius: 6.25rem;
-  background: var(--primaty-cyan-light, #C3DCE3);
-  border: none;
-  cursor: pointer;
 }
 
 .first-screen-informaion-about-us {
+  margin-top: 1.5rem;
+  margin-bottom: 1.88rem;
   display: flex;
   align-items: center;
   gap: 3.04856rem;
@@ -321,4 +333,8 @@ h4 {
 .mini-game-about-screen-game .mini-game-about-screen-game-img {
   bottom: 35%;
   position: absolute;
+}
+
+.increase-vocab-screen {
+  background-color: var(--primaty-grey-light, #F6F5F4);
 }/*# sourceMappingURL=main.css.map */

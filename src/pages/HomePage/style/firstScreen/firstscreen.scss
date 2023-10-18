@@ -32,24 +32,14 @@
 
 
 .first-screen-informaion-container-btn {
+    margin-top: 2rem;
     margin-bottom: 3.05rem;
-
-    .first-screen-informaion-btn {
-        color: #2B788B;
-        display: flex;
-        padding: 0.875rem 1.375rem;
-        justify-content: center;
-        align-items: center;
-        gap: 1.1875rem;
-        border-radius: 6.25rem;
-        background: var(--primaty-cyan-light, #C3DCE3);
-        border: none;
-        cursor: pointer;
-    }
 }
 
 
 .first-screen-informaion-about-us {
+    margin-top: 1.5rem;
+    margin-bottom: 1.88rem;
     display: flex;
     align-items: center;
     gap: 3.04856rem;

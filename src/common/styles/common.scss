@@ -15,6 +15,10 @@ p {
     margin: 0;
 }
 
+button {
+    border: none;
+}
+
 h1 {
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 3.5rem;
@@ -121,3 +125,23 @@ h4 {
 
 // Стили выше это шрифты
 // Далее стили ниже
+
+.buttonLight {
+    border-radius: 6.25rem;
+    background: var(--primaty-cyan-light, #C3DCE3);
+    color: #2B788B;
+
+    display: flex;
+    padding: 0.875rem 1.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1875rem;
+
+    &:hover {
+        cursor: pointer;
+        transition: background-color 0.6s, color 0.6s;
+
+        color: white;
+        background-color: #2B788B;
+    }
+}
