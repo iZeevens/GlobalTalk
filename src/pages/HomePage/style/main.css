@@ -134,6 +134,14 @@ h4 {
   background-color: #2B788B;
 }
 
+.greyDark {
+  color: var(--primaty-grey-dark, #757575);
+}
+
+.description {
+  max-width: 85%;
+}
+
 .head {
   background: var(--primaty-grey-light, #F6F5F4);
   box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
@@ -202,10 +210,6 @@ h4 {
   line-height: 100%;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
-}
-.first-screen-informaion-texts .first-screen-informaion-practice {
-  color: var(--primaty-grey-dark, #757575);
-  max-width: 24.80538rem;
 }
 
 .first-screen-informaion-container-btn {
@@ -292,9 +296,6 @@ h4 {
   align-items: flex-start;
   gap: 1.875rem;
 }
-.mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-paragraf {
-  color: var(--primaty-grey-dark, #757575);
-}
 .mini-game-about-screen-texts .mini-game-about-screen-games {
   display: flex;
   gap: 1.32rem;
@@ -359,10 +360,6 @@ h4 {
   align-items: flex-start;
   gap: 1.875rem;
 }
-.increase-vocab-screen-continer-text .increase-vocab-screen-text-description {
-  color: var(--primaty-grey-dark, #757575);
-  max-width: 24.80538rem;
-}
 
 .increase-vocab-screen-btn {
   font-family: "Montserrat", sans-serif;
@@ -370,4 +367,24 @@ h4 {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.04rem;
+}
+
+.watch-progress-screen .container {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 5.96rem 0;
+}
+
+.watch-progress-screen-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.125rem;
+}
+.watch-progress-screen-container-text .watch-progress-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
 }/*# sourceMappingURL=main.css.map */

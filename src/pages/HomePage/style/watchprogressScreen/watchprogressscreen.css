@@ -1,0 +1,19 @@
+.watch-progress-screen .container {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 5.96rem 0;
+}
+
+.watch-progress-screen-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.125rem;
+}
+.watch-progress-screen-container-text .watch-progress-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+}/*# sourceMappingURL=watchprogressscreen.css.map */
