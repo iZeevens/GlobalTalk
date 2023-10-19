@@ -129,7 +129,7 @@ h4 {
 }
 .buttonLight:hover {
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.6s, color 0.6s;
   color: white;
   background-color: #2B788B;
 }
@@ -167,8 +167,8 @@ h4 {
 }
 .nav .nav-item:hover {
   color: var(--primaty-black, #000);
-  animation: pulse; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
+  animation: pulse;
+  animation-duration: 1s;
 }
 
 .sign {
@@ -205,6 +205,7 @@ h4 {
 }
 .first-screen-informaion-texts .first-screen-informaion-practice {
   color: var(--primaty-grey-dark, #757575);
+  max-width: 24.80538rem;
 }
 
 .first-screen-informaion-container-btn {
@@ -337,4 +338,36 @@ h4 {
 
 .increase-vocab-screen {
   background-color: var(--primaty-grey-light, #F6F5F4);
+}
+.increase-vocab-screen .container {
+  display: flex;
+  align-items: center;
+  gap: 1.596rem;
+  padding-top: 1.63rem;
+}
+
+.increase-vocab-screen-continer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.125rem;
+  padding-left: 6.25rem;
+}
+.increase-vocab-screen-continer-text .increase-vocab-screen-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+.increase-vocab-screen-continer-text .increase-vocab-screen-text-description {
+  color: var(--primaty-grey-dark, #757575);
+  max-width: 24.80538rem;
+}
+
+.increase-vocab-screen-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.04rem;
 }/*# sourceMappingURL=main.css.map */
