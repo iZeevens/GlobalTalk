@@ -43,6 +43,13 @@
 .sign .profileName {
   color: var(--primaty-grey-dark, #757575);
 }
+.sign .login-sign {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: black;
+  cursor: pointer;
+}
 
 .header-items {
   padding: 1.5rem 0;

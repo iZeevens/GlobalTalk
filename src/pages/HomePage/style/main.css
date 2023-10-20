@@ -18,6 +18,10 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 3.5rem;
@@ -186,6 +190,40 @@ h4 {
 }
 .sign .profileName {
   color: var(--primaty-grey-dark, #757575);
+}
+.sign .login-sign {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: black;
+  cursor: pointer;
+}
+.sign .login-sign span {
+  display: block;
+  position: relative;
+  background-color: black;
+  height: 3px;
+  width: 15px;
+}
+.sign .login-sign span::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 11px;
+  right: -2px;
+  top: -3px;
+  transform: rotate(50deg);
+}
+.sign .login-sign span::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 11px;
+  right: -2px;
+  top: 3px;
+  transform: rotate(-50deg);
 }
 
 .header-items {
