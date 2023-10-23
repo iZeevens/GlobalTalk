@@ -143,6 +143,7 @@ h4 {
 }
 
 .description {
+  font-size: max(0.2857em, 14px);
   max-width: 85%;
 }
 
@@ -223,16 +224,13 @@ h4 {
   font-size: clamp(2em, 5vw, 3.5em);
 }
 .first-screen-informaion-texts .first-screen-informaion-platform {
+  font-size: max(0.2857em, 14px);
   color: var(--primaty-cyan-dark, #2B788B);
   font-family: "Montserrat", sans-serif;
-  font-size: max(0.2857em, 12px);
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
-}
-.first-screen-informaion-texts .first-screen-informaion-description {
-  font-size: max(0.3214em, 14px);
 }
 
 .first-screen-informaion-container-btn {
@@ -307,6 +305,7 @@ h4 {
 }
 
 .mini-game-about-screen-texts {
+  font-size: clamp(1.5em, 5vw, 3em);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -321,7 +320,7 @@ h4 {
   gap: 1.875rem;
 }
 .mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-main-text {
-  font-size: clamp(1.5em, 5vw, 3em);
+  font-size: 1em;
 }
 .mini-game-about-screen-texts .mini-game-about-screen-games {
   display: flex;
