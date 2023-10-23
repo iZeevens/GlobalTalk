@@ -14,6 +14,11 @@
             .footer-text-left {
                 display: flex;
                 gap: 1.875rem;
+
+                .footer-text-left-link:hover {
+                    animation: pulse;
+                    animation-duration: 1s;
+                }
             }
         
             .footer-text-right {
@@ -41,6 +46,11 @@
             .footer-link-left {
                 display: flex;
                 gap: 1.875rem;
+
+                .footer-link-left-social-site:hover {
+                    animation: pulse;
+                    animation-duration: 1s;
+                }
             }
 
             .footer-link-right-text {

@@ -20,6 +20,9 @@
   align-items: flex-start;
   gap: 1.875rem;
 }
+.mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-main-text {
+  font-size: clamp(1.5em, 5vw, 3em);
+}
 .mini-game-about-screen-texts .mini-game-about-screen-games {
   display: flex;
   gap: 1.32rem;

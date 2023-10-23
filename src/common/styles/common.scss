@@ -107,7 +107,7 @@ h4 {
 .button1 {
     //18px
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.125rem;
+    font-size: clamp(0.875rem, 5vw, 1.125rem); //Разобраться почему не меняется шрифт
     line-height: 1.575rem;
     letter-spacing: -0.045rem;
     font-weight: 700;
@@ -116,7 +116,7 @@ h4 {
 .button2 {
     //16px
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 5vw, 1rem); //Разобраться почему не меняется шрифт
     line-height: 1rem;
     font-weight: 700;
     letter-spacing: -0.04rem;
@@ -156,4 +156,11 @@ h4 {
 
 .description {
     max-width: 85%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 }

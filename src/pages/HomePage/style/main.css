@@ -102,7 +102,7 @@ h4 {
 
 .button1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(0.875rem, 5vw, 1.125rem);
   line-height: 1.575rem;
   letter-spacing: -0.045rem;
   font-weight: 700;
@@ -110,7 +110,7 @@ h4 {
 
 .button2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 5vw, 1rem);
   line-height: 1rem;
   font-weight: 700;
   letter-spacing: -0.04rem;
@@ -146,6 +146,12 @@ h4 {
   max-width: 85%;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 .head {
   background: var(--primaty-grey-light, #F6F5F4);
   box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
@@ -198,33 +204,6 @@ h4 {
   color: black;
   cursor: pointer;
 }
-.sign .login-sign span {
-  display: block;
-  position: relative;
-  background-color: black;
-  height: 3px;
-  width: 15px;
-}
-.sign .login-sign span::after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 3px;
-  width: 11px;
-  right: -2px;
-  top: -3px;
-  transform: rotate(50deg);
-}
-.sign .login-sign span::before {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 3px;
-  width: 11px;
-  right: -2px;
-  top: 3px;
-  transform: rotate(-50deg);
-}
 
 .header-items {
   padding: 1.5rem 0;
@@ -240,14 +219,20 @@ h4 {
   padding-bottom: 8.41rem;
 }
 
+.first-screen-informaion-texts {
+  font-size: clamp(2em, 5vw, 3.5em);
+}
 .first-screen-informaion-texts .first-screen-informaion-platform {
   color: var(--primaty-cyan-dark, #2B788B);
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: max(0.2857em, 12px);
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
+}
+.first-screen-informaion-texts .first-screen-informaion-description {
+  font-size: max(0.3214em, 14px);
 }
 
 .first-screen-informaion-container-btn {
@@ -256,6 +241,7 @@ h4 {
 }
 
 .first-screen-informaion-about-us {
+  font-size: 1em;
   margin-top: 1.5rem;
   margin-bottom: 1.88rem;
   display: flex;
@@ -333,6 +319,9 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.875rem;
+}
+.mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-main-text {
+  font-size: clamp(1.5em, 5vw, 3em);
 }
 .mini-game-about-screen-texts .mini-game-about-screen-games {
   display: flex;
@@ -444,6 +433,10 @@ h4 {
   display: flex;
   gap: 1.875rem;
 }
+.footer .container .footer-container-text .footer-text-left .footer-text-left-link:hover {
+  animation: pulse;
+  animation-duration: 1s;
+}
 .footer .container .footer-container-text .footer-text-right {
   display: flex;
   gap: 1.875rem;
@@ -465,6 +458,10 @@ h4 {
 .footer .container .footer-container-link .footer-link-left {
   display: flex;
   gap: 1.875rem;
+}
+.footer .container .footer-container-link .footer-link-left .footer-link-left-social-site:hover {
+  animation: pulse;
+  animation-duration: 1s;
 }
 .footer .container .footer-container-link .footer-link-right-text {
   cursor: default;
