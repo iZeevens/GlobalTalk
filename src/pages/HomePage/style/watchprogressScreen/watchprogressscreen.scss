@@ -8,6 +8,17 @@
     }
 }
 
+.watch-progress-screen-container-img {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
 .watch-progress-screen-container-text {
     display: flex;
     flex-direction: column;
@@ -20,4 +31,4 @@
         align-items: flex-start;
         gap: 1.875rem;
     }
-}
+}   

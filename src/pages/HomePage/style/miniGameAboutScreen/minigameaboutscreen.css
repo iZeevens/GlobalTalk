@@ -6,6 +6,16 @@
   padding: 4.84rem 0;
 }
 
+.mini-game-about-screen-img {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  align-items: center;
+}
+.mini-game-about-screen-img img {
+  width: 100%;
+}
+
 .mini-game-about-screen-texts {
   font-size: clamp(1.5em, 5vw, 3em);
   display: flex;
@@ -20,9 +30,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1.875rem;
-}
-.mini-game-about-screen-texts .mini-game-about-screen-text .mini-game-about-screen-main-text {
-  font-size: 1em;
 }
 .mini-game-about-screen-texts .mini-game-about-screen-games {
   display: flex;
@@ -63,4 +70,10 @@
 .mini-game-about-screen-game .mini-game-about-screen-game-img {
   bottom: 35%;
   position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .mini-game-about-screen-texts {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=minigameaboutscreen.css.map */

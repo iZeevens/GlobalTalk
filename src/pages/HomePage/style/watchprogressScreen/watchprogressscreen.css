@@ -5,6 +5,16 @@
   padding: 5.96rem 0;
 }
 
+.watch-progress-screen-container-img {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  align-items: center;
+}
+.watch-progress-screen-container-img img {
+  width: 100%;
+}
+
 .watch-progress-screen-container-text {
   display: flex;
   flex-direction: column;

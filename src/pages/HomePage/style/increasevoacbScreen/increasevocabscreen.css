@@ -8,12 +8,22 @@
   padding-top: 1.63rem;
 }
 
+.increase-vocab-screen-container-img {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  align-items: center;
+}
+.increase-vocab-screen-container-img img {
+  width: 100%;
+}
+
 .increase-vocab-screen-continer-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.125rem;
-  padding-left: 6.25rem;
+  margin-left: 6.25rem;
 }
 .increase-vocab-screen-continer-text .increase-vocab-screen-text {
   display: flex;
@@ -28,4 +38,10 @@
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.04rem;
+}
+
+@media (max-width: 1024px) {
+  .increase-vocab-screen-continer-text {
+    margin-left: 4vw;
+  }
 }/*# sourceMappingURL=increasevocabscreen.css.map */

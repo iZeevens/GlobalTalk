@@ -8,17 +8,17 @@
   padding-bottom: 8.41rem;
 }
 
-.first-screen-informaion-texts {
-  font-size: clamp(2em, 5vw, 3.5em);
-}
 .first-screen-informaion-texts .first-screen-informaion-platform {
-  font-size: max(0.2857em, 14px);
+  font-size: clamp(0.75rem, 2vw, 1rem);
   color: var(--primaty-cyan-dark, #2B788B);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
+}
+.first-screen-informaion-texts .first-screen-informaion-about-us {
+  font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 .first-screen-informaion-container-btn {
@@ -27,7 +27,6 @@
 }
 
 .first-screen-informaion-about-us {
-  font-size: 1em;
   margin-top: 1.5rem;
   margin-bottom: 1.88rem;
   display: flex;
@@ -48,7 +47,7 @@
 .first-screen-informaion-about-us .first-screen-informaion-about-number {
   color: #000;
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -0.05rem;
@@ -56,30 +55,53 @@
 .first-screen-informaion-about-us .first-screen-informaion-about-number .first-screen-informaion-about-plus {
   color: #2B788B;
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -0.05rem;
 }
 .first-screen-informaion-about-us .first-screen-informaion-about-discript {
   color: #585858;
+  font-size: clamp(0.75rem, 3vw, 1rem);
 }
 
 .first-screen-img {
+  max-width: 610px;
+  width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .first-screen-img .first-screen-img-boy {
+  width: 100%;
   position: relative;
-  margin-left: 3.24rem;
   margin-left: 0.9rem;
 }
 .first-screen-img .first-screen-img-toy {
   position: absolute;
   filter: blur(7px);
-  top: 30%;
+  top: 36%;
+  width: 100%;
+  max-width: 143px;
 }
 .first-screen-img .first-screen-img-cactus {
   position: absolute;
   filter: blur(10.5px);
+  top: 0;
   left: 54%;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .first-screen-img-cactus {
+    top: 15% !important;
+  }
+}
+@media (max-width: 850px) {
+  .nav-item {
+    display: none;
+  }
+  .nav-vertical-line {
+    display: none;
+  }
 }/*# sourceMappingURL=firstscreen.css.map */

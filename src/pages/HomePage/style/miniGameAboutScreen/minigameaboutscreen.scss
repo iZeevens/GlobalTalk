@@ -7,6 +7,17 @@
     }
 }
 
+.mini-game-about-screen-img {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
 
 .mini-game-about-screen-texts {
     font-size: clamp(1.5em, 5vw, 3em);
@@ -23,9 +34,7 @@
         align-items: flex-start;
         gap: 1.875rem;
 
-        .mini-game-about-screen-main-text {
-            font-size: 1em;
-        }
+        .mini-game-about-screen-main-text {}
     }
 
     .mini-game-about-screen-games {
@@ -74,5 +83,11 @@
     .mini-game-about-screen-game-img {
         bottom: 35%;
         position: absolute;
+    }
+}
+
+@media(max-width: 1024px) {
+    .mini-game-about-screen-texts {
+        margin-left: 0;
     }
 }

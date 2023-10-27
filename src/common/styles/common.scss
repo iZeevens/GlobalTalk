@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-family: 'Dela Gothic One', sans-serif;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: 400;
     line-height: 100%;
     letter-spacing: -0.12rem;
@@ -107,7 +107,7 @@ h4 {
 .button1 {
     //18px
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.875rem, 5vw, 1.125rem); //Разобраться почему не меняется шрифт
+    font-size: clamp(0.875rem, 1.8vw, 1.125rem); 
     line-height: 1.575rem;
     letter-spacing: -0.045rem;
     font-weight: 700;
@@ -116,7 +116,7 @@ h4 {
 .button2 {
     //16px
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.875rem, 5vw, 1rem); //Разобраться почему не меняется шрифт
+    font-size: clamp(0.875rem, 1.8vw, 1rem); 
     line-height: 1rem;
     font-weight: 700;
     letter-spacing: -0.04rem;
@@ -155,7 +155,7 @@ h4 {
 }
 
 .description {
-    font-size: max(0.2857em, 14px);
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
     max-width: 85%;
 }
 
