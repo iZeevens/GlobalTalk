@@ -3,7 +3,7 @@
 }
 .mini-game-about-screen .container {
   display: flex;
-  padding: 4.84rem 0;
+  padding: 4% 0;
 }
 
 .mini-game-about-screen-img {
@@ -75,5 +75,18 @@
 @media (max-width: 1024px) {
   .mini-game-about-screen-texts {
     margin-left: 0;
+  }
+}
+@media (max-width: 765px) {
+  .mini-game-about-screen .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mini-game-about-screen-texts {
+    align-items: center;
+  }
+  .mini-game-about-screen-texts .mini-game-about-screen-text {
+    align-items: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=minigameaboutscreen.css.map */

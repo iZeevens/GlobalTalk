@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   gap: 1.596rem;
-  padding-top: 1.63rem;
+  padding-top: 1.5%;
 }
 
 .increase-vocab-screen-container-img {
@@ -16,6 +16,9 @@
 }
 .increase-vocab-screen-container-img img {
   width: 100%;
+}
+.increase-vocab-screen-container-img .increase-vocab-screen-img-mobile {
+  display: none;
 }
 
 .increase-vocab-screen-continer-text {
@@ -43,5 +46,28 @@
 @media (max-width: 1024px) {
   .increase-vocab-screen-continer-text {
     margin-left: 4vw;
+  }
+}
+@media (max-width: 800px) {
+  .increase-vocab-screen .container {
+    gap: 0;
+  }
+}
+@media (max-width: 765px) {
+  .increase-vocab-screen .container {
+    flex-direction: column;
+  }
+  .increase-vocab-screen-container-img {
+    max-width: 480px;
+    position: relative;
+    right: -25px;
+  }
+  .increase-vocab-screen-continer-text {
+    align-items: center;
+    margin-left: 0;
+  }
+  .increase-vocab-screen-continer-text .increase-vocab-screen-text {
+    text-align: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=increasevocabscreen.css.map */

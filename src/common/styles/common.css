@@ -151,4 +151,9 @@ h4 {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+}
+@media (max-width: 765px) {
+  .description {
+    max-width: none;
+  }
 }/*# sourceMappingURL=common.css.map */
