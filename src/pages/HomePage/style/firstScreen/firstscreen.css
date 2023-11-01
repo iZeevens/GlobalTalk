@@ -98,14 +98,6 @@
     top: 15% !important;
   }
 }
-@media (max-width: 850px) {
-  .nav-item {
-    display: none;
-  }
-  .nav-vertical-line {
-    display: none;
-  }
-}
 @media (max-width: 765px) {
   .first-screen .container {
     flex-direction: column;

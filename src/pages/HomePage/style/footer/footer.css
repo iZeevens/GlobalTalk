@@ -64,4 +64,27 @@
   text-decoration: none;
   line-height: 100%;
   font-weight: 600;
+}
+
+@media (max-width: 765px) {
+  .footer-container-text {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 490px) {
+  .footer-container-text {
+    justify-content: space-around !important;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footer-container-text .footer-text-left,
+  .footer-container-text .footer-text-right {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+  .footer-container-link {
+    gap: 20px;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=footer.css.map */
