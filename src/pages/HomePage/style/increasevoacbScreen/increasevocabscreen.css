@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   gap: 1.596rem;
+  overflow: hidden;
   padding-top: 1.5%;
 }
 

@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  padding: 1.5rem 0;
 }
 
 .nav {
@@ -34,6 +35,10 @@
   color: black;
 }
 
+.logo-mobile {
+  font-size: clamp(1rem, 4vw, 1.30381rem);
+}
+
 .nav-item,
 .nav-item-mobile {
   color: #757575;
@@ -53,37 +58,40 @@
 .menu-container {
   display: inline-block;
   cursor: pointer;
+  max-height: 24px;
+  max-width: 24px;
+  overflow: hidden;
 }
 
 .bar {
   display: block;
-  width: 30px;
+  width: 24px;
   height: 2px;
   margin: 6px 0;
   background-color: #333;
   transition: 0.4s;
 }
 .bar:nth-child(2) {
-  width: 25px;
+  width: 19px;
 }
 .bar:nth-child(3) {
-  width: 13px;
+  width: 10px;
 }
 
 .menu-container {
   display: none;
 }
 .menu-container:hover .bar:nth-child(2) {
-  width: 30px;
+  width: 24px;
 }
 .menu-container:hover .bar:nth-child(3) {
-  width: 30px;
+  width: 24px;
 }
 .menu-container.open .bar:nth-child(2) {
-  width: 30px !important;
+  width: 24px !important;
 }
 .menu-container.open .bar:nth-child(3) {
-  width: 30px !important;
+  width: 24px !important;
 }
 .menu-container.open .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -110,7 +118,19 @@
   gap: 10px;
 }
 .sign .profile .profile-name {
+  display: flex;
+  gap: 9px;
+  align-items: center;
   color: var(--primaty-grey-dark, #757575);
+}
+.sign .profile .profile-name:after {
+  content: "";
+  display: none;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #757575;
+  border-right: 2px solid #757575;
+  transform: rotate(135deg);
 }
 .sign .login-sign {
   display: flex;
@@ -118,6 +138,11 @@
   gap: 0.4rem;
   color: black;
   cursor: pointer;
+}
+.sign .login-sign:hover {
+  transition: 0.4s;
+  text-decoration: underline;
+  color: var(--primaty-cyan-dark, #2B788B);
 }
 
 .profile-icon-container {
@@ -140,10 +165,6 @@
   letter-spacing: -0.04rem;
 }
 
-.header-items {
-  padding: 1.5rem 0;
-}
-
 .nav-container-mobile {
   display: none;
   background-color: #F4F4F2;
@@ -155,11 +176,18 @@
 }
 
 @media (max-width: 850px) {
+  .head .container {
+    padding: 13px 0;
+  }
+  .profile-icon-container {
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .profile-name {
+    font-size: 12px;
+  }
   .nav {
     gap: 0;
-  }
-  .nav .logo {
-    display: none;
   }
   .nav .nav-vertical-line {
     display: none;
@@ -167,10 +195,20 @@
   .nav .nav-item {
     display: none;
   }
+  .logo {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .profile-name:after {
+    display: block !important;
+  }
   .menu-container {
     display: block;
   }
   .logo-mobile {
     display: block;
+    margin-top: 3px;
   }
 }/*# sourceMappingURL=navbar.css.map */
