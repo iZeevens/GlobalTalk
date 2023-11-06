@@ -1,2 +1,4 @@
-@import "/src/common/styles/common.scss";
+@import "../../../common/styles/common";
+@import '../../../../node_modules/animate.css/animate.css'; 
 
+@import "navbar/navbar";
